@@ -5,6 +5,10 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
+    found
+    if !BRANDS.includes?(brand)
+      BRANDS << brand
+    end
     BRANDS << brand
   end
 
